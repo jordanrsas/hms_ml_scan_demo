@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_scan">
+
+    <fragment
+        android:id="@+id/nav_scan"
+        android:name="com.dtse.demo.ml.ui.scan.ScanFragment"
+        android:label="@string/menu_scan"
+        tools:layout="@layout/fragment_scan" />
+
+    <fragment
+        android:id="@+id/nav_asr"
+        android:name="com.dtse.demo.ml.ui.asr.AsrFragment"
+        android:label="@string/menu_asr"
+        tools:layout="@layout/fragment_asr" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.dtse.demo.ml.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+</navigation>
